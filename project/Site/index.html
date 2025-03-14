@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,41 @@
     <link rel="stylesheet" href="./style/style.css">
     <script src="./script/script.js"></script>
 </head>
+
 <body>
     <div id="header">
         <div id="menuBtn"></div>
-        <div id="logo"><h1>StarHauler</h1></div>
-    </div>
-    <div id="calculator">
-        <div id="routeMenu">
-            <div id="routes"></div>
-            <div id="addRouteBtn"></div>
+        <div id="logo">
+            <h1>StarHauler</h1>
         </div>
-        <div id="cmdtyInputs">
-            
+    </div>
+    <div id="content">
+        <div id="calculator">
+            <div id="routeMenu">
+                <div id="routes"></div>
+                <div id="addRouteBtn"></div>
+            </div>
+            <div id="cmdtyInputs">
+                <select id="commodity">
+                    <option value="" disabled selected>Commodity</option>
+                </select>
+                <select id="origin">
+                    <option value="" disabled selected>Origin</option>
+                </select>
+                <input type="number" id="purchasePrice" placeholder="Purchase Price">
+                <select id="destination">
+                    <option value="" disabled selected>Destination</option>
+                </select>
+                <input type="number" id="sellPrice" placeholder="Sell Price">
+                <select id="ship">
+                    <option value="" disabled selected>Ship</option>
+                </select>
+                <input type="number" id="quantity" placeholder="Quantity">
+                <input type="number" id="expenses" placeholder="Expenses">
+                <input type="number" id="flightTime" placeholder="Flight Time">
+            </div>
         </div>
     </div>
 </body>
+
 </html>

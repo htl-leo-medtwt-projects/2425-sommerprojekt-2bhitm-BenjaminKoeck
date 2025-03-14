@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+}
+
+#header {
+    background-color: #0B131F;
+    color: white;
+    text-align: center;
+    height: 100px;
+    width: 100vw;
+    position: sticky;
+    top: -100px;
+    margin: 0;
+    border-bottom: #54ADF7 3px solid;
+}
+
+#logo {
+    font-size: 2em;
+    margin: auto 0 auto 0;
+    padding: 0;
+    line-height: 100px;
+}
+
+#logo h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#menuBtn {
+    display: none;
+    margin: auto 0 auto 0;
+}
+
+
+#content {
+    background-image: url("../img/bg.webp");
+}
