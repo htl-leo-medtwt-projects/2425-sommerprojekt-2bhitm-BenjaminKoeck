@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 150vh;
+    overflow-x: hidden;
 }
 
 #header {
@@ -33,7 +34,47 @@ body {
     margin: auto 0 auto 0;
 }
 
+#calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+#cmdtyInputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#cmdtyInputs input {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 1230px;
+    height: 64px;
+    border: 3px solid #54ADF7;
+    background-color: #132236;
+    border-radius: 17px;
+}
+
+#cmdtyInputs select {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 1230px;
+    height: 64px;
+    border: 3px solid #54ADF7;
+    background-color: #132236;
+    border-radius: 17px;
+}
+
 
 #content {
-    background-image: url("../img/bg.webp");
+    background-image: url("../img/bgDark.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
 }
