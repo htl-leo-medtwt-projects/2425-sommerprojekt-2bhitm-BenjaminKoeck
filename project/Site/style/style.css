@@ -1,20 +1,41 @@
+:root {
+    --primary-color: #0B131F;
+    --secondary-color: #132236;
+    --text-color: white;
+    --border-color: #54ADF7;
+
+    --border: var(--border-color) 3px solid;
+    --border-radius: 17px;
+
+
+    --background-image: url("../img/bgDark.png");
+
+    --inputs-width: 1230px;
+    --inputs-height: 64px;
+    --inputs-vertical-margin: 16px;
+    --inputs-other-vertical-margin: 30px;
+
+    
+}
+
 body {
     margin: 0;
     padding: 0;
-    height: 150vh;
+    height: 100vh;
     overflow-x: hidden;
+
 }
 
 #header {
-    background-color: #0B131F;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-color);
     text-align: center;
     height: 100px;
     width: 100vw;
     position: sticky;
     top: -100px;
     margin: 0;
-    border-bottom: #54ADF7 3px solid;
+    border-bottom: var(--border);
 }
 
 #logo {
@@ -37,6 +58,25 @@ body {
 #calculator {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: var(--primary-color);
+    width: 1400px;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1306px;
+    margin: auto;
+    margin: 0;
+    padding: 0;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
 }
 
 #cmdtyInputs {
@@ -50,31 +90,32 @@ body {
 
 #cmdtyInputs input {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
-    width: 1230px;
-    height: 64px;
-    border: 3px solid #54ADF7;
-    background-color: #132236;
-    border-radius: 17px;
+    width: var(--inputs-width);
+    height: var(--inputs-height);
+    border: var(--border);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
 }
 
 #cmdtyInputs select {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
-    width: 1230px;
-    height: 64px;
-    border: 3px solid #54ADF7;
-    background-color: #132236;
-    border-radius: 17px;
+    width: var(--inputs-width);
+    height: var(--inputs-height);
+    border: var(--border);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
 }
 
 
 #content {
-    background-image: url("../img/bgDark.png");
+    background-image: var(--background-image);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100vh;
     width: 100vw;
 }
