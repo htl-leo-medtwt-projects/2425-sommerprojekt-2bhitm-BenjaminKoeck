@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url("../font/BaiJamjuree-Regular.ttf");
+}
+
 :root {
     --primary-color: #0B131F;
     --secondary-color: #132236;
@@ -18,12 +23,14 @@
     
 }
 
+/* Calculator & General */
+
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     overflow-x: hidden;
-
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 #header {
@@ -60,8 +67,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    margin: 0 auto 0 auto;
     background-color: var(--primary-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
     width: 1400px;
 }
 
@@ -71,9 +80,8 @@ body {
     justify-content: space-around;
     align-items: center;
     width: 1306px;
-    margin: auto;
-    margin: 0;
-    padding: 0;
+    margin: var(--inputs-other-vertical-margin) auto var(--inputs-other-vertical-margin) auto;
+    padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
     border: var(--border);
     border-radius: var(--border-radius);
     background-color: var(--secondary-color);
@@ -116,6 +124,60 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    min-height: calc(100vh - 100px);
     width: 100vw;
+    margin: 0;
+    padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
+}
+
+#outputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1306px;
+    margin: 0 auto var(--inputs-other-vertical-margin) auto;
+    padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+}
+
+#outputs div {
+    margin: 0;
+    margin-bottom: var(--inputs-vertical-margin);
+    padding: 0;
+    width: var(--inputs-width);
+    height: var(--inputs-height);
+    border: var(--border);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+}
+
+
+/* Homepage */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6em;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    max-width: 80vw;
 }
