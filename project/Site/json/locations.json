@@ -476,6 +476,299 @@
                         "Hadanite"
                     ]
                 }
+            },
+            "lagrange": {
+                "hurL1": {
+                    "name": "HUR-L1 Green Glade Station",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                            "buys": [
+                            "Scrap",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Beryl",
+                            "Compboard",
+                            "CMAT",
+                            "DEGR",
+                            "Diamond",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hydrogen",
+                            "Laranite",
+                            "Marok Gem",
+                            "Medical Supplies",
+                            "Omnapoxy",
+                            "Party Favors",
+                            "Processed Food",
+                            "Stims",
+                            "Thermalfoam"
+                        ]
+                    }
+                    
+                },
+                "hurL2": {
+                    "name": "HUR-L2 Faithful Dream Station",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                            "buys": [
+                            "Scrap",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Compboard",
+                            "DEGR",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hydrogen",
+                            "Laranite",
+                            "Marok Gem",
+                            "Medical Supplies",
+                            "Nitrogen",
+                            "Party Favors",
+                            "Processed Food",
+                            "Xa'Pyen"
+                        ]
+                    },
+                    "platinumBay": {
+                        "name": "Platinum Bay",
+                        "buys": null,
+                        "sells": [
+                            "RMC"
+                        ]
+                    }
+                },
+                "hurL3": {
+                    "name": "HUR-L3 Thundering Express Station",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                            "buys": [
+                            "Nitrogen",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Agricium",
+                            "Beryl",
+                            "Borase",
+                            "Compboard",
+                            "CMAT",
+                            "DEGR",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hydrogen",
+                            "Medical Supplies",
+                            "Omnapoxy",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    },
+                    "platinumBay": {
+                        "name": "Platinum Bay",
+                        "buys": null,
+                        "sells": [
+                            "RMC"
+                        ]
+                    }
+                },
+                "hurL4": {
+                    "name": "HUR-L4 Melodic Fields Station",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                            "buys": [
+                            "Waste",
+                            "Xa'Pyen"
+                        ],
+                        "sells": [
+                            "Agricium",
+                            "Beryl",
+                            "Compboard",
+                            "CMAT",
+                            "DEGR",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hydrogen",
+                            "Marok Gem",
+                            "Medical Supplies",
+                            "Nitrogen",
+                            "Processed Food",
+                            "Thermalfoam"
+                        ]
+                    }
+                },
+                "hurL5": {
+                    "name": "HUR-L5 High Course Station",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                            "buys": [
+                            "Methane",
+                            "Scrap",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Beryl",
+                            "Compboard",
+                            "DEGR",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hydrogen",
+                            "Medical Supplies",
+                            "Processed Food",
+                            "Stims",
+                            "Xa'Pyen"
+                        ]
+                    },
+                    "platinumBay": {
+                        "name": "Platinum Bay",
+                        "buys": null,
+                        "sells": [
+                            "RMC"
+                        ]
+                    }
+                }
+            }
+        },
+        "crusader": {
+            "name": "Crusader",
+            "satellites": {
+                "celin": {
+                    "name": "Celin",
+                    "tmhf": {
+                        "name":"Terra Mills HydroFarm",
+                        "buys": [
+                            "Bioplastic",
+                            "Carbon-Silk",
+                            "Fresh Food",
+                            "Pressurized Ice",
+                            "Revenant Tree Pollen"
+                        ],
+                        "sells": [
+                            "Agricultural Supplies",
+                            "Methane",
+                            "Nitrogen",
+                            "Ranta Dung",
+                            "RMC",
+                            "Stileron"
+                        ]
+                    },
+                    "hro": {
+                        "name":"Hickes Research Outpost",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Distilled Spirits",
+                            "Iodine",
+                            "Medical Supplies",
+                            "Methane",
+                            "Nitrogen",
+                            "Stims",
+                            "Thermalfoam",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Quartz",
+                            "Stileron"
+                        ]
+                    }
+                },
+                "daymar": {
+                    "name": "Daymar",
+                    "acma141": {
+                        "name":"ArcCorp Mining Area 141",
+                        "buys": [
+                            "Agricium",
+                            "Beryl",
+                            "Corundum",
+                            "Quartz",
+                            "Tungsten",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Riccite",
+                            "Stileron",
+                            "Stims"
+                        ]
+                    },
+                    "bby": {
+                        "name": "Brio's Braker Yard",
+                        "buys": [
+                            "Scrap"
+                        ],
+                        "sells": [
+                            "Agricium",
+                            "Altruciatoxin",
+                            "Astatine",
+                            "Beradom",
+                            "Bexalite",
+                            "Borase",
+                            "Copper",
+                            "E'tam",
+                            "Feynmaline",
+                            "Fluorine",
+                            "GAWE",
+                            "Glacosite",
+                            "Hadanite",
+                            "Helium",
+                            "Hydrogen",
+                            "Maze",
+                            "Neon",
+                            "Party Favors",
+                            "RMC",
+                            "Revenant Pod",
+                            "Revenant Tree Pollen",
+                            "SLAM",
+                            "Tin",
+                            "Titanium",
+                            "WiDoW"
+                        ]
+                    },
+                    "smfScd1": {
+                        "name":"Shubin Mining Facility SCD-1",
+                        "buys": [
+                            "Copper",
+                            "Corundum",
+                            "Gold",
+                            "Quartz",
+                            "Tungsten",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Cobalt",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    }    
+                },
+                "yela": {
+                    "acma157": {
+                        "name":"ArcCorp Mining Area 157",
+                        "buys": [
+                            "Agricium",
+                            "Beryl",
+                            "Corundum",
+                            "Quartz",
+                            "Tungsten",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Riccite",
+                            "Stileron",
+                            "Stims"
+                        ]
+                    }
+                }
             }
         }
     }
