@@ -7,10 +7,10 @@
     <title>StarHauler</title>
 
     <link rel="stylesheet" href="./librarys/fullPage.js-master/dist/fullpage.css">
-    <script src="./librarys/fullPage.js-master/dist/fullpage.js"></script>
+    <script src="./librarys/fullPage.js-master/dist/fullpage.js" defer></script>
 
     <link rel="stylesheet" href="./style/style.css">
-    <script src="./script/script.js"></script>
+    <script src="./script/script.js" defer></script>
 </head>
 
 <body>
@@ -18,11 +18,18 @@
         <h1>Welcome to StarHauler</h1>
         <h2>The 'Verse's second best trading tool</h2>
     </section>
-    <section id="section2">
-        <h1>calculator</h1>
-        <h2>With our route-calculator you can create multiple routes with multiple commodities each,
-            enabling you to compare different routes and fill up the rest of your cargo space, if your source is out of stock, and calculate that in the same go</h2>
-        </h2>
+    <section id="section2" onclick="expandCalcSection()">
+        <h1 onclick="goToCalc()" style="cursor: pointer;">calculator</h1>
+        <h2>With our route calculator you can create multiple routes with multiple commodities each,
+            enabling you to compare different routes and fill up the rest of your cargo space with a different commodity 
+            if your source is out of stock and calculate that in the same go</h2>
+    </section>
+    <div id="section2-2">
+        <h1 class="section2-2-content">calculator</h1>
+        <h2 class="section2-2-content">Just put in the data you know and the data calculatable from that will be put out below</h2>
+    </div>
+    <section>
+        <h1>Commodity Viewer</h1>
     </section>
 </body>
 

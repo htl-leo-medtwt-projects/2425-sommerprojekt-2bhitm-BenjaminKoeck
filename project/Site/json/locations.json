@@ -1,0 +1,482 @@
+{
+    "stanton": {
+        "name": "Stanton",
+        "hurston": {
+            "name": "Hurston",
+            "satellites": {
+                "arial": {
+                    "name": "Arial",
+                    "bezdek": {
+                            "name": "HDMS-Bezdek",
+                            "buys": [
+                                "Aphorite",
+                                "AUDI",
+                                "Beradom",
+                                "Dolivine",
+                                "Feynmaline",
+                                "Glacosite",
+                                "Hadanite",
+                                "Neograph"                              
+                            ],
+                            "sells": [
+                                "Aluminium",
+                                "Gold",
+                                "Iron",
+                                "Laranite",
+                                "Titanium",
+                                "Tungsten"
+                            ]
+                    },
+                    "lathan": {
+                            "name": "HDMS-Lathan",
+                            "buys": [
+                                "Aphorite",
+                                "Compboard",
+                                "Distilled Spirits",
+                                "Dolivine",
+                                "Hadanite",
+                                "Processed Food",
+                                "Stims"                             
+                            ],
+                            "sells": [
+                                "Agricultural Supplies",
+                                "Aluminium",
+                                "Laranite",
+                                "Titanium",
+                                "Tungsten",
+                                "Waste"
+                            ]
+                    }   
+                },
+                "aberdeen": {
+                    "name": "Aberdeen",
+                    "anderson": {
+                        "name":"HDMS-Anderson",
+                        "buys": [
+                            "Aluminium",
+                            "Gold",
+                            "Iron"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "AUDI",
+                            "Beradom",
+                            "Compboard",
+                            "Dolivine",
+                            "Feynmaline",
+                            "Glacosite",
+                            "Hadanite"
+                        ]
+                    },
+                    "Norgaard": {
+                        "name":"HDMS-Norgaard",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Compboard",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    }
+                },
+                "magda": {
+                    "name": "Magda",
+                    "hahn": {
+                        "name":"HDMS-Hahn",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Chlorine",
+                            "Fluorine",
+                            "Gold",
+                            "Scrap",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Compboard",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Iron",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    },
+                    "perlman": {
+                        "name":"HDMS-Perlman",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Chlorine",
+                            "Fluorine",
+                            "Scrap",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Compboard",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    }
+                },
+                "ita": {
+                    "name": "Ita",
+                    "ryder": {
+                        "name":"HDMS-Ryder",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Astatine",
+                            "Cobalt",
+                            "Hydrogen",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Compboard",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Helium",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    },
+                    "woodruff": {
+                        "name":"HDMS-Woodruff",
+                        "buys": [
+                            "Aluminium",
+                            "Astatine",
+                            "Hydrogen",
+                            "Taranite",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "AUDI",
+                            "Beradom",
+                            "Dolivine",
+                            "Feynmaline",
+                            "Glacosite",
+                            "Hadanite",
+                            "Helium",
+                            "Processed Food"
+                        ]
+                    }
+                },
+                "everusHarbor": {
+                    "name": "Everus Harbor",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                        "buys": [
+                            "Aluminium",
+                            "Ammonia",
+                            "Aphorite",
+                            "Argon",
+                            "AUDI",
+                            "Beradom",
+                            "CMAT",
+                            "Corundum",
+                            "DEGR",
+                            "Dolivine",
+                            "DYNF",
+                            "Feynmaline",
+                            "Fluorine",
+                            "Glacosite",
+                            "Hadanite",
+                            "Hephaestanite",
+                            "Hydrogen",
+                            "Luminalia Gift",
+                            "Mercury",
+                            "Party Favors",
+                            "Processed Food",
+                            "Souvenirs",
+                            "Stims",
+                            "Waste",
+                            "YTPO"
+                        ],
+                        "sells": [
+                            "Carbon",
+                            "Iron",
+                            "Scrap",
+                            "Steel",
+                            "Titanium",
+                            "Tungsten"
+                        ]
+                    }
+                }
+            },
+            "surface": {
+                "lorville": {
+                    "name": "Lorville",
+                    "adminOffice": {
+                        "name": "Admin Office",
+                        "buys": [
+                            "Waste"
+                        ],
+                        "sells": null
+                    },
+                    "tce": {
+                        "name": "TCE, Central Business District",
+                        "buys": [
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Agricium",
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Ammonia",
+                            "Aphorite",
+                            "Argon",
+                            "Astatine",
+                            "Atlasium",
+                            "AUDI",
+                            "Beradom",
+                            "Beryl",
+                            "Bexalite",
+                            "Bioplastic",
+                            "Borase",
+                            "Carbon",
+                            "Carbon-Silk",
+                            "Chlorine",
+                            "Cobalt",
+                            "Compboard",
+                            "CMAT",
+                            "Copper",
+                            "Corundum",
+                            "DEGR",
+                            "Diamond",
+                            "Diamond Laminate",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Dymantium",
+                            "DYNF",
+                            "Feynmaline",
+                            "Fluorine",
+                            "Fresh Food",
+                            "Glacosite",
+                            "Gold",
+                            "Grain",
+                            "HOTW",
+                            "Helium",
+                            "Hephaestanite",
+                            "Hydrogen",
+                            "Iodine",
+                            "Iron",
+                            "Janalite",
+                            "Kopion Horn",
+                            "Laranite",
+                            "Luminalia Gift",
+                            "Marok Gem",
+                            "Medical Supplies",
+                            "Mercury",
+                            "Methane",
+                            "Nitrogen",
+                            "Omnapoxy",
+                            "Party Favors",
+                            "Potassium",
+                            "Pressurized Ice",
+                            "Processed Food",
+                            "Prota",
+                            "Quantainium",
+                            "Quartz",
+                            "Ranta Dung",
+                            "RMC",
+                            "Revenant Tree Pollen",
+                            "Riccite",
+                            "Scrap",
+                            "Silicon",
+                            "Souvenirs",
+                            "Steel",
+                            "Stileron",
+                            "Stims",
+                            "Sunset Berries",
+                            "Taranite",
+                            "Thermalfoam",
+                            "Tin",
+                            "Titanium",
+                            "Tungsten",
+                            "Xa'Pyen",
+                            "YTPO"
+                        ]
+                    }
+                },
+                "edmond": {
+                    "name": "HDMS-Edmond",
+                    "buys": [
+                        "Atlasium",
+                        "Cobalt",
+                        "Dymantium",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "Beradom",
+                        "Compboard",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Glacosite",
+                        "Hadanite",
+                        "Neograph"
+                    ]
+                },
+                "hadley": {
+                    "name": "HDMS-Hadley",
+                    "buys": [
+                        "Bexalite",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "AUDI",
+                        "Beradom",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Fresh Food",
+                        "Glacosite",
+                        "Hadanite"
+                    ]
+                },
+                "oparei": {
+                    "name": "HDMS-Oparei",
+                    "buys": [
+                        "Atlasium",
+                        "Cobalt",
+                        "Dymantium",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "Beradom",
+                        "Compboard",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Glacosite",
+                        "Hadanite",
+                        "Neograph"
+                    ]
+                },
+                "pickersField": {
+                    "name": "Picker's Field",
+                    "buys": [
+                        "Cobalt",
+                        "RMC"
+                    ],
+                    "sells": [
+                        "Copper",
+                        "Diamond",
+                        "Iron",
+                        "Scrap",
+                        "Waste"
+                    ]
+                },
+                "pinewood": {
+                    "name": "HDMS-Pinewood",
+                    "buys": [
+                        "Bexalite",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "AUDI",
+                        "Beradom",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Fresh Food",
+                        "Glacosite",
+                        "Hadanite"
+                    ]
+                },
+                "rappel": {
+                    "name": "Rappel",
+                    "buys": [
+                        "CMAT",
+                        "RMC"
+                    ],
+                    "sells": [
+                        "Copper",
+                        "Diamond",
+                        "Iron",
+                        "Scrap",
+                        "Waste"
+                    ]
+                },
+                "rdo": {
+                    "name": "Reclamation and Disposal Orinth",
+                    "buys": [
+                        "Diamond",
+                        "Scrap"
+                    ],
+                    "sells": [
+                        "Altruciatoxin",
+                        "Beryl",
+                        "Borase",
+                        "CMAT",
+                        "Copper",
+                        "Corundum",
+                        "E'tam",
+                        "GAWE",
+                        "Maze",
+                        "Medical Supplies",
+                        "Neon",
+                        "Party Favors",
+                        "Quartz",
+                        "RMC",
+                        "Revenant Tree Pollen",
+                        "SLAM",
+                        "Souvenirs",
+                        "Tin",
+                        "Titanium",
+                        "WiDoW"
+                    ]
+                },
+                "stanhope": {
+                    "name": "HDMS-Stanhope",
+                    "buys": [
+                        "Bexalite",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "AUDI",
+                        "Beradom",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Fresh Food",
+                        "Glacosite",
+                        "Hadanite"
+                    ]
+                },
+                "thedus": {
+                    "name": "HDMS-Thedus",
+                    "buys": [
+                        "Bexalite",
+                        "Iron"
+                    ],
+                    "sells": [
+                        "Aphorite",
+                        "AUDI",
+                        "Beradom",
+                        "Dolivine",
+                        "Feynmaline",
+                        "Fresh Food",
+                        "Glacosite",
+                        "Hadanite"
+                    ]
+                }
+            }
+        }
+    }
+}
