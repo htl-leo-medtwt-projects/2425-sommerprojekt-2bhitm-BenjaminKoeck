@@ -7,57 +7,52 @@
                 "arial": {
                     "name": "Arial",
                     "bezdek": {
-                            "name": "HDMS-Bezdek",
-                            "buys": [
-                                "Aphorite",
-                                "AUDI",
-                                "Beradom",
-                                "Dolivine",
-                                "Feynmaline",
-                                "Glacosite",
-                                "Hadanite",
-                                "Neograph"                              
-                            ],
-                            "sells": [
-                                "Aluminium",
-                                "Gold",
-                                "Iron",
-                                "Laranite",
-                                "Titanium",
-                                "Tungsten"
-                            ]
+                        "name": "HDMS-Bezdek",
+                        "buys": [
+                            "Aluminium",
+                            "Gold",
+                            "Iron",
+                            "Laranite",
+                            "Titanium",
+                            "Tungsten"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "AUDI",
+                            "Beradom",
+                            "Dolivine",
+                            "Feynmaline",
+                            "Glacosite",
+                            "Hadanite",
+                            "Neograph"
+                        ]
                     },
                     "lathan": {
-                            "name": "HDMS-Lathan",
-                            "buys": [
-                                "Aphorite",
-                                "Compboard",
-                                "Distilled Spirits",
-                                "Dolivine",
-                                "Hadanite",
-                                "Processed Food",
-                                "Stims"                             
-                            ],
-                            "sells": [
-                                "Agricultural Supplies",
-                                "Aluminium",
-                                "Laranite",
-                                "Titanium",
-                                "Tungsten",
-                                "Waste"
-                            ]
-                    }   
+                        "name": "HDMS-Lathan",
+                        "buys": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Laranite",
+                            "Titanium",
+                            "Tungsten",
+                            "Waste"
+                        ],
+                        "sells": [
+                            "Aphorite",
+                            "Compboard",
+                            "Distilled Spirits",
+                            "Dolivine",
+                            "Hadanite",
+                            "Processed Food",
+                            "Stims"
+                        ]
+                    }
                 },
                 "aberdeen": {
                     "name": "Aberdeen",
                     "anderson": {
-                        "name":"HDMS-Anderson",
+                        "name": "HDMS-Anderson",
                         "buys": [
-                            "Aluminium",
-                            "Gold",
-                            "Iron"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "AUDI",
                             "Beradom",
@@ -66,16 +61,16 @@
                             "Feynmaline",
                             "Glacosite",
                             "Hadanite"
+                        ],
+                        "sells": [
+                            "Aluminium",
+                            "Gold",
+                            "Iron"
                         ]
                     },
                     "Norgaard": {
-                        "name":"HDMS-Norgaard",
+                        "name": "HDMS-Norgaard",
                         "buys": [
-                            "Agricultural Supplies",
-                            "Aluminium",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "Compboard",
                             "Distilled Spirits",
@@ -83,23 +78,19 @@
                             "Hadanite",
                             "Processed Food",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Waste"
                         ]
                     }
                 },
                 "magda": {
                     "name": "Magda",
                     "hahn": {
-                        "name":"HDMS-Hahn",
+                        "name": "HDMS-Hahn",
                         "buys": [
-                            "Agricultural Supplies",
-                            "Aluminium",
-                            "Chlorine",
-                            "Fluorine",
-                            "Gold",
-                            "Scrap",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "Compboard",
                             "Distilled Spirits",
@@ -108,19 +99,20 @@
                             "Iron",
                             "Processed Food",
                             "Stims"
-                        ]
-                    },
-                    "perlman": {
-                        "name":"HDMS-Perlman",
-                        "buys": [
+                        ],
+                        "sells": [
                             "Agricultural Supplies",
                             "Aluminium",
                             "Chlorine",
                             "Fluorine",
+                            "Gold",
                             "Scrap",
                             "Waste"
-                        ],
-                        "sells": [
+                        ]
+                    },
+                    "perlman": {
+                        "name": "HDMS-Perlman",
+                        "buys": [
                             "Aphorite",
                             "Compboard",
                             "Distilled Spirits",
@@ -128,22 +120,22 @@
                             "Hadanite",
                             "Processed Food",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Chlorine",
+                            "Fluorine",
+                            "Scrap",
+                            "Waste"
                         ]
                     }
                 },
                 "ita": {
                     "name": "Ita",
                     "ryder": {
-                        "name":"HDMS-Ryder",
+                        "name": "HDMS-Ryder",
                         "buys": [
-                            "Agricultural Supplies",
-                            "Aluminium",
-                            "Astatine",
-                            "Cobalt",
-                            "Hydrogen",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "Compboard",
                             "Distilled Spirits",
@@ -152,18 +144,19 @@
                             "Helium",
                             "Processed Food",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Agricultural Supplies",
+                            "Aluminium",
+                            "Astatine",
+                            "Cobalt",
+                            "Hydrogen",
+                            "Waste"
                         ]
                     },
                     "woodruff": {
-                        "name":"HDMS-Woodruff",
+                        "name": "HDMS-Woodruff",
                         "buys": [
-                            "Aluminium",
-                            "Astatine",
-                            "Hydrogen",
-                            "Taranite",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "AUDI",
                             "Beradom",
@@ -173,6 +166,13 @@
                             "Hadanite",
                             "Helium",
                             "Processed Food"
+                        ],
+                        "sells": [
+                            "Aluminium",
+                            "Astatine",
+                            "Hydrogen",
+                            "Taranite",
+                            "Waste"
                         ]
                     }
                 },
@@ -181,6 +181,14 @@
                     "adminOffice": {
                         "name": "Admin Office",
                         "buys": [
+                            "Carbon",
+                            "Iron",
+                            "Scrap",
+                            "Steel",
+                            "Titanium",
+                            "Tungsten"
+                        ],
+                        "sells": [
                             "Aluminium",
                             "Ammonia",
                             "Aphorite",
@@ -206,14 +214,6 @@
                             "Stims",
                             "Waste",
                             "YTPO"
-                        ],
-                        "sells": [
-                            "Carbon",
-                            "Iron",
-                            "Scrap",
-                            "Steel",
-                            "Titanium",
-                            "Tungsten"
                         ]
                     }
                 }
@@ -223,17 +223,14 @@
                     "name": "Lorville",
                     "adminOffice": {
                         "name": "Admin Office",
-                        "buys": [
+                        "buys": null,
+                        "sells": [
                             "Waste"
-                        ],
-                        "sells": null
+                        ]
                     },
                     "tce": {
                         "name": "TCE, Central Business District",
                         "buys": [
-                            "Waste"
-                        ],
-                        "sells": [
                             "Agricium",
                             "Agricultural Supplies",
                             "Aluminium",
@@ -310,18 +307,15 @@
                             "Tungsten",
                             "Xa'Pyen",
                             "YTPO"
+                        ],
+                        "sells": [
+                            "Waste"
                         ]
                     }
                 },
                 "edmond": {
                     "name": "HDMS-Edmond",
                     "buys": [
-                        "Atlasium",
-                        "Cobalt",
-                        "Dymantium",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "Beradom",
                         "Compboard",
@@ -330,15 +324,17 @@
                         "Glacosite",
                         "Hadanite",
                         "Neograph"
+                    ],
+                    "sells": [
+                        "Atlasium",
+                        "Cobalt",
+                        "Dymantium",
+                        "Iron"
                     ]
                 },
                 "hadley": {
                     "name": "HDMS-Hadley",
                     "buys": [
-                        "Bexalite",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "AUDI",
                         "Beradom",
@@ -347,17 +343,15 @@
                         "Fresh Food",
                         "Glacosite",
                         "Hadanite"
+                    ],
+                    "sells": [
+                        "Bexalite",
+                        "Iron"
                     ]
                 },
                 "oparei": {
                     "name": "HDMS-Oparei",
                     "buys": [
-                        "Atlasium",
-                        "Cobalt",
-                        "Dymantium",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "Beradom",
                         "Compboard",
@@ -366,29 +360,31 @@
                         "Glacosite",
                         "Hadanite",
                         "Neograph"
+                    ],
+                    "sells": [
+                        "Atlasium",
+                        "Cobalt",
+                        "Dymantium",
+                        "Iron"
                     ]
                 },
                 "pickersField": {
                     "name": "Picker's Field",
                     "buys": [
-                        "Cobalt",
-                        "RMC"
-                    ],
-                    "sells": [
                         "Copper",
                         "Diamond",
                         "Iron",
                         "Scrap",
                         "Waste"
+                    ],
+                    "sells": [
+                        "Cobalt",
+                        "RMC"
                     ]
                 },
                 "pinewood": {
                     "name": "HDMS-Pinewood",
                     "buys": [
-                        "Bexalite",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "AUDI",
                         "Beradom",
@@ -397,29 +393,29 @@
                         "Fresh Food",
                         "Glacosite",
                         "Hadanite"
+                    ],
+                    "sells": [
+                        "Bexalite",
+                        "Iron"
                     ]
                 },
                 "rappel": {
                     "name": "Rappel",
                     "buys": [
-                        "CMAT",
-                        "RMC"
-                    ],
-                    "sells": [
                         "Copper",
                         "Diamond",
                         "Iron",
                         "Scrap",
                         "Waste"
+                    ],
+                    "sells": [
+                        "CMAT",
+                        "RMC"
                     ]
                 },
                 "rdo": {
                     "name": "Reclamation and Disposal Orinth",
                     "buys": [
-                        "Diamond",
-                        "Scrap"
-                    ],
-                    "sells": [
                         "Altruciatoxin",
                         "Beryl",
                         "Borase",
@@ -440,15 +436,15 @@
                         "Tin",
                         "Titanium",
                         "WiDoW"
+                    ],
+                    "sells": [
+                        "Diamond",
+                        "Scrap"
                     ]
                 },
                 "stanhope": {
                     "name": "HDMS-Stanhope",
                     "buys": [
-                        "Bexalite",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "AUDI",
                         "Beradom",
@@ -457,15 +453,15 @@
                         "Fresh Food",
                         "Glacosite",
                         "Hadanite"
+                    ],
+                    "sells": [
+                        "Bexalite",
+                        "Iron"
                     ]
                 },
                 "thedus": {
                     "name": "HDMS-Thedus",
                     "buys": [
-                        "Bexalite",
-                        "Iron"
-                    ],
-                    "sells": [
                         "Aphorite",
                         "AUDI",
                         "Beradom",
@@ -474,6 +470,10 @@
                         "Fresh Food",
                         "Glacosite",
                         "Hadanite"
+                    ],
+                    "sells": [
+                        "Bexalite",
+                        "Iron"
                     ]
                 }
             },
@@ -482,11 +482,7 @@
                     "name": "HUR-L1 Green Glade Station",
                     "adminOffice": {
                         "name": "Admin Office",
-                            "buys": [
-                            "Scrap",
-                            "Waste"
-                        ],
-                        "sells": [
+                        "buys": [
                             "Beryl",
                             "Compboard",
                             "CMAT",
@@ -503,19 +499,18 @@
                             "Processed Food",
                             "Stims",
                             "Thermalfoam"
+                        ],
+                        "sells": [
+                            "Scrap",
+                            "Waste"
                         ]
                     }
-                    
                 },
                 "hurL2": {
                     "name": "HUR-L2 Faithful Dream Station",
                     "adminOffice": {
                         "name": "Admin Office",
-                            "buys": [
-                            "Scrap",
-                            "Waste"
-                        ],
-                        "sells": [
+                        "buys": [
                             "Compboard",
                             "DEGR",
                             "Distilled Spirits",
@@ -528,25 +523,25 @@
                             "Party Favors",
                             "Processed Food",
                             "Xa'Pyen"
+                        ],
+                        "sells": [
+                            "Scrap",
+                            "Waste"
                         ]
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": null,
-                        "sells": [
+                        "buys": [
                             "RMC"
-                        ]
+                        ],
+                        "sells": null
                     }
                 },
                 "hurL3": {
                     "name": "HUR-L3 Thundering Express Station",
                     "adminOffice": {
                         "name": "Admin Office",
-                            "buys": [
-                            "Nitrogen",
-                            "Waste"
-                        ],
-                        "sells": [
+                        "buys": [
                             "Agricium",
                             "Beryl",
                             "Borase",
@@ -560,25 +555,25 @@
                             "Omnapoxy",
                             "Processed Food",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Nitrogen",
+                            "Waste"
                         ]
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": null,
-                        "sells": [
+                        "buys": [
                             "RMC"
-                        ]
+                        ],
+                        "sells": null
                     }
                 },
                 "hurL4": {
                     "name": "HUR-L4 Melodic Fields Station",
                     "adminOffice": {
                         "name": "Admin Office",
-                            "buys": [
-                            "Waste",
-                            "Xa'Pyen"
-                        ],
-                        "sells": [
+                        "buys": [
                             "Agricium",
                             "Beryl",
                             "Compboard",
@@ -592,6 +587,10 @@
                             "Nitrogen",
                             "Processed Food",
                             "Thermalfoam"
+                        ],
+                        "sells": [
+                            "Waste",
+                            "Xa'Pyen"
                         ]
                     }
                 },
@@ -599,12 +598,7 @@
                     "name": "HUR-L5 High Course Station",
                     "adminOffice": {
                         "name": "Admin Office",
-                            "buys": [
-                            "Methane",
-                            "Scrap",
-                            "Waste"
-                        ],
-                        "sells": [
+                        "buys": [
                             "Beryl",
                             "Compboard",
                             "DEGR",
@@ -615,14 +609,19 @@
                             "Processed Food",
                             "Stims",
                             "Xa'Pyen"
+                        ],
+                        "sells": [
+                            "Methane",
+                            "Scrap",
+                            "Waste"
                         ]
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": null,
-                        "sells": [
+                        "buys": [
                             "RMC"
-                        ]
+                        ],
+                        "sells": null
                     }
                 }
             }
@@ -633,26 +632,30 @@
                 "celin": {
                     "name": "Celin",
                     "tmhf": {
-                        "name":"Terra Mills HydroFarm",
+                        "name": "Terra Mills HydroFarm",
                         "buys": [
-                            "Bioplastic",
-                            "Carbon-Silk",
-                            "Fresh Food",
-                            "Pressurized Ice",
-                            "Revenant Tree Pollen"
-                        ],
-                        "sells": [
                             "Agricultural Supplies",
                             "Methane",
                             "Nitrogen",
                             "Ranta Dung",
                             "RMC",
                             "Stileron"
+                        ],
+                        "sells": [
+                            "Bioplastic",
+                            "Carbon-Silk",
+                            "Fresh Food",
+                            "Pressurized Ice",
+                            "Revenant Tree Pollen"
                         ]
                     },
                     "hro": {
-                        "name":"Hickes Research Outpost",
+                        "name": "Hickes Research Outpost",
                         "buys": [
+                            "Quartz",
+                            "Stileron"
+                        ],
+                        "sells": [
                             "Agricultural Supplies",
                             "Distilled Spirits",
                             "Iodine",
@@ -662,26 +665,14 @@
                             "Stims",
                             "Thermalfoam",
                             "Waste"
-                        ],
-                        "sells": [
-                            "Quartz",
-                            "Stileron"
                         ]
                     }
                 },
                 "daymar": {
                     "name": "Daymar",
                     "acma141": {
-                        "name":"ArcCorp Mining Area 141",
+                        "name": "ArcCorp Mining Area 141",
                         "buys": [
-                            "Agricium",
-                            "Beryl",
-                            "Corundum",
-                            "Quartz",
-                            "Tungsten",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "Distilled Spirits",
                             "Dolivine",
@@ -690,14 +681,19 @@
                             "Riccite",
                             "Stileron",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Agricium",
+                            "Beryl",
+                            "Corundum",
+                            "Quartz",
+                            "Tungsten",
+                            "Waste"
                         ]
                     },
                     "bby": {
                         "name": "Brio's Braker Yard",
                         "buys": [
-                            "Scrap"
-                        ],
-                        "sells": [
                             "Agricium",
                             "Altruciatoxin",
                             "Astatine",
@@ -723,19 +719,14 @@
                             "Tin",
                             "Titanium",
                             "WiDoW"
+                        ],
+                        "sells": [
+                            "Scrap"
                         ]
                     },
                     "smfScd1": {
-                        "name":"Shubin Mining Facility SCD-1",
+                        "name": "Shubin Mining Facility SCD-1",
                         "buys": [
-                            "Copper",
-                            "Corundum",
-                            "Gold",
-                            "Quartz",
-                            "Tungsten",
-                            "Waste"
-                        ],
-                        "sells": [
                             "Aphorite",
                             "Cobalt",
                             "Distilled Spirits",
@@ -743,30 +734,158 @@
                             "Hadanite",
                             "Processed Food",
                             "Stims"
-                        ]
-                    }    
-                },
-                "yela": {
-                    "acma157": {
-                        "name":"ArcCorp Mining Area 157",
-                        "buys": [
-                            "Agricium",
-                            "Beryl",
+                        ],
+                        "sells": [
+                            "Copper",
                             "Corundum",
+                            "Gold",
                             "Quartz",
                             "Tungsten",
                             "Waste"
-                        ],
-                        "sells": [
+                        ]
+                    }
+                },
+                "yela": {
+                    "name": "Yela",
+                    "satellites": {
+                        "grimHEX": {
+                            "name": "Grim HEX",
+                            "adminOffice": {
+                                "name": "Admin Office",
+                                "buys": [
+                                    "Agricium",
+                                    "Agricultural Supplies",
+                                    "Altruciatoxin",
+                                    "Aluminium",
+                                    "Amioshi Plague",
+                                    "Ammonia",
+                                    "Aphorite",
+                                    "Argon",
+                                    "Astatine",
+                                    "Atlasium",
+                                    "AUDI",
+                                    "Beryl",
+                                    "Bexalite",
+                                    "Bioplastic",
+                                    "Borase",
+                                    "Carbon",
+                                    "Carbon-Silk",
+                                    "Chlorine",
+                                    "Cobalt",
+                                    "Compboard",
+                                    "CMAT",
+                                    "Copper",
+                                    "Corundum",
+                                    "DCSR2",
+                                    "DEGR",
+                                    "Diamond",
+                                    "Diamond Laminate",
+                                    "Distilled Spirits",
+                                    "Dolivine",
+                                    "Dymantium",
+                                    "DYNF",
+                                    "E'tam",
+                                    "Fluorine",
+                                    "Fresh Food",
+                                    "GAWE",
+                                    "Gold",
+                                    "GOLM",
+                                    "Hadanite",
+                                    "HOTW",
+                                    "Helium",
+                                    "Hephaestanite",
+                                    "Hydrogen",
+                                    "Iodine",
+                                    "Iron",
+                                    "Janalite",
+                                    "Kopion Horn",
+                                    "Laranite",
+                                    "Luminalia Gift",
+                                    "Marok Gem",
+                                    "Maze",
+                                    "Medical Supplies",
+                                    "Mercury",
+                                    "Methane",
+                                    "Neon",
+                                    "Nitrogen",
+                                    "Omnapoxy",
+                                    "Partillium",
+                                    "Party Favors",
+                                    "Potassium",
+                                    "Pressurized Ice",
+                                    "Processed Food",
+                                    "Prota",
+                                    "Quantainium",
+                                    "Quartz",
+                                    "Ranta Dung",
+                                    "RMC",
+                                    "Revenant Tree Pollen",
+                                    "Riccite",
+                                    "Scrap",
+                                    "SHPA",
+                                    "Silicon",
+                                    "SLAM",
+                                    "Souvenirs",
+                                    "Steel",
+                                    "Stileron",
+                                    "Stims",
+                                    "Sunset Berries",
+                                    "Taranite",
+                                    "Thermalfoam",
+                                    "Tin",
+                                    "Titanium",
+                                    "Tungsten",
+                                    "WiDoW",
+                                    "Xa'Pyen",
+                                    "YTPO"
+                                ],
+                                "sells": null
+                            }
+                        }
+                    },
+                    "surface": {
+                        "acma157": {
+                        "name": "ArcCorp Mining Area 157",
+                        "buys": [
                             "Aphorite",
                             "Distilled Spirits",
                             "Dolivine",
                             "Hadanite",
+                            "Helium",
                             "Processed Food",
                             "Riccite",
                             "Stileron",
                             "Stims"
+                        ],
+                        "sells": [
+                            "Astatine",
+                            "Atlasium",
+                            "Waste"
                         ]
+                        },
+                        "dro": {
+                            "name": "Deakins Research Outpost",
+                            "buys": [
+                                "Amioshi Plague",
+                                "Astatine",
+                                "Quartz",
+                                "Stileron"
+                            ],
+                            "sells": [
+                                "Agricultural Supplies",
+                                "Bioplastic",
+                                "Chlorine",
+                                "Distilled Spirits",
+                                "Iodine",
+                                "Medical Supplies",
+                                "Methane",
+                                "Nitrogen",
+                                "Omnapoxy",
+                                "Stims",
+                                "Thermalfoam",
+                                "Waste"
+                            ]
+                        }
                     }
                 }
             }
