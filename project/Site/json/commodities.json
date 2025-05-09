@@ -2,8 +2,48 @@
     {
         "name": "Agricium",
         "symbol": "AGRI",
-        "soldAt": [
-            ""
+        "buyableAt": [
+            {
+                "name": "ArcCorp Mining Area 141",
+                "location": "Daymar, Crusader, Stanton",
+                "path": "locations.stanton.crusader.satellites.daymar.acma141",
+                "price": 2076.0
+            }
+        ],
+        "sellableAt": [
+            {
+                "name":"Admin Office",
+                "location": "Grim HEX, Yela, Crusader, Stanton",
+                "path": "locations.stanton.crusader.satellites.yela.satellites.grimHex.adminOffice",
+                "price": 2266.0
+            },
+            {
+                "name": "Admin Office",
+                "location": "HUR-L3 Thundering Express Station, HUR-L3, Stanton",
+                "path": "locations.stanton.hurston.lagrange.hurL3.adminOffice",
+                "price": 2502.0
+            },
+            {
+                "name": "Admin Office",
+                "location": "HUR-L4 Melodic Fields Station, HUR-L4, Stanton",
+                "path": "locations.stanton.hurston.lagrange.hurL4.adminOffice",
+                "price": 2505.0
+            },
+            {
+                "name": "Brio's Braker Yard",
+                "location": "Brio's Braker Yard, Daymar, Crusader, Stanton",
+                "path": "locations.stanton.crusader.satellites.daymar.bby",
+                "price": 2265.0
+            },
+            {
+                "name": "Transfers Commodity Exchange",
+                "location": "Central Business District, Lorville, Hurston, Stanton",
+                "path": "locations.stanton.hurston.lorville.tce",
+                "price": 2391.0
+            }
         ]
+    },
+    {
+        "name": "",
     }
 ]
