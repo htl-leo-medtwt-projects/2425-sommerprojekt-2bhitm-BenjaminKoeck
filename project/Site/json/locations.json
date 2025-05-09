@@ -531,10 +531,10 @@
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": [
+                        "buys": null,
+                        "sells": [
                             "RMC"
-                        ],
-                        "sells": null
+                        ]
                     }
                 },
                 "hurL3": {
@@ -563,10 +563,10 @@
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": [
+                        "buys": null,
+                        "sells": [
                             "RMC"
-                        ],
-                        "sells": null
+                        ]
                     }
                 },
                 "hurL4": {
@@ -618,10 +618,10 @@
                     },
                     "platinumBay": {
                         "name": "Platinum Bay",
-                        "buys": [
+                        "buys": null,
+                        "sells": [
                             "RMC"
-                        ],
-                        "sells": null
+                        ]
                     }
                 }
             }
@@ -629,7 +629,7 @@
         "crusader": {
             "name": "Crusader",
             "satellites": {
-                "celin": {
+                "cellin": {
                     "name": "Celin",
                     "tmhf": {
                         "name": "Terra Mills HydroFarm",
