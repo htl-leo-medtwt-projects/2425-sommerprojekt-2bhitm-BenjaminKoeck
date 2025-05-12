@@ -1,4 +1,4 @@
-{
+let locations = {
     "stanton": {
         "name": "Stanton",
         "hurston": {
@@ -891,4 +891,4 @@
             }
         }
     }
-}
+};

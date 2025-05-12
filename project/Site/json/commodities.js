@@ -1,4 +1,4 @@
-[
+let commodities = [
     {
         "name": "Agricium",
         "symbol": "AGRI",

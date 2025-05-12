@@ -1,5 +1,5 @@
-{
-    "aegis": {
+let ships = [
+    {
         "name": "Aegis Dynamics",
         "ships": [
             {
@@ -52,10 +52,10 @@
             }
         ]
     },
-    
-    "anvil": {
+
+    {
         "name": "Anvil Aerospace",
-        "ships" : [
+        "ships": [
             {
                 "name": "C8 Pisces",
                 "cargo": 4
@@ -107,9 +107,9 @@
         ]
     },
 
-    "argo": {
+    {
         "name": "Argo Astronautics",
-        "ships" : [
+        "ships": [
             {
                 "name": "CSV-SM",
                 "cargo": 4
@@ -145,9 +145,9 @@
         ]
     },
 
-    "banu": {
+    {
         "name": "Banu Souli",
-        "ships" : [
+        "ships": [
             {
                 "name": "Merchantman",
                 "cargo": 2880
@@ -155,8 +155,8 @@
         ]
     },
 
-    "co": {
-        "name": "Consolidated Outland", 
+    {
+        "name": "Consolidated Outland",
         "ships": [
             {
                 "name": "Mustang Alpha",
@@ -177,9 +177,9 @@
         ]
     },
 
-    "crusader": {
+    {
         "name": "Crusader Industries",
-        "ships" : [
+        "ships": [
             {
                 "name": "A2 Hercules Starlifter",
                 "cargo": 234
@@ -206,10 +206,10 @@
             }
         ]
     },
-    
-    "drake": {
+
+    {
         "name": "Drake Interplanetary",
-        "ships" : [
+        "ships": [
             {
                 "name": "Caterpillar",
                 "cargo": 576
@@ -273,9 +273,9 @@
         ]
     },
 
-    "gatac": {
+    {
         "name": "Gatac Manufacture",
-        "ships" : [
+        "ships": [
             {
                 "name": "Gatac Railen",
                 "cargo": 320
@@ -287,9 +287,9 @@
         ]
     },
 
-    "greycat": {
+    {
         "name": "Greycat Industrial",
-        "ships" : [
+        "ships": [
             {
                 "name": "ROC-DS",
                 "cargo": 3
@@ -297,7 +297,7 @@
         ]
     },
 
-    "misc": {
+    {
         "name": "MISC",
         "ships": [
             {
@@ -375,9 +375,9 @@
         ]
     },
 
-    "origin": {
+    {
         "name": "Origin Jumpworks",
-        "ships" : [
+        "ships": [
             {
                 "name": "100i",
                 "cargo": 2
@@ -429,9 +429,9 @@
         ]
     },
 
-    "rsi": {
+    {
         "name": "Roberts Space Industries",
-        "ships" : [
+        "ships": [
             {
                 "name": "Apollo Medivac",
                 "cargo": 28
@@ -515,13 +515,13 @@
         ]
     },
 
-    "tumbril": {
+    {
         "name": "Tumbril Land Systems",
-        "ships" : [
+        "ships": [
             {
                 "name": "Cyclone",
                 "cargo": 1
             }
         ]
     }
-}
+]

@@ -59,6 +59,7 @@ body {
 #logo h1 {
     margin: 0;
     padding: 0;
+    font-size: 2em;
 }
 
 #menuBtn {
@@ -109,9 +110,17 @@ body {
     border: var(--border);
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
-#cmdtyInputs select {
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-sizing: border-box;
     margin: 0;
     margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
@@ -120,8 +129,19 @@ body {
     border: var(--border);
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
+select option {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 0.7em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    width: var(--inputs-width);
+}
 
 #content {
     background-image: var(--background-image);
