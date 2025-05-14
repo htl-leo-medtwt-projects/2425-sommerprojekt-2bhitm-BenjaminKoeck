@@ -11,7 +11,7 @@ let inputs = {
     "prchsPrcInp": document.getElementById("purchasePrice"),
     "sellPrcInp": document.getElementById("sellPrice"),
     "qtyInp": document.getElementById("quantity"),
-    "expnss": document.getElementById("expnss"),
+    "expnss": document.getElementById("expenses"),
     "flgtTime": document.getElementById("flightTime")
 };
 
@@ -25,7 +25,7 @@ let outputs = {
     "ntPrftPH": document.getElementById("netProfitPerHour")
 };
 
-
+// Selected values
 let selectValues = {
     "commodity": null,
     "origin": null,
@@ -42,22 +42,8 @@ let inputValues = {
 };
 
 
+// Initiation Function
 loadCalc();
-
-if (selectValues.commodity != null) {
-    selectValues.origin = selectValues.commodity.buyableAt[parseInt(selects.originInp.value)];
-    selectValues.destination = selectValues.commodity.sellableAt[parseInt(selects.destInp.value)];
-    selectValues.ship = ships[parseInt(selects.shipInp.value)];
-}
-
-
-
-function calc() {
-
-    if (selectValues.commodity != null && selectValues.origin != null && selectValues.destination != null && selectValues.ship != null) {
-
-    }
-}
 
 function loadCalc() {
     let output = "";
@@ -79,13 +65,6 @@ function loadCalc() {
         }
         selects.destInp.innerHTML = output;
         output = "";
-
-        /* output += `<option value="" disabled selected>Ship</option>`;
-        for (let i = 0; i < selectValues.ships.length; i++) {
-            output += `<option value="${i}">${selectValues.ships[i].name}</option>`;
-        }
-        selects.shipInp.innerHTML = output;
-        output = ""; */
     } else {
         output = "";
 
@@ -94,6 +73,13 @@ function loadCalc() {
             output += `<option value="${i}">${commodities[i].name}</option>`;
         }
         selects.cmdtyInp.innerHTML = output;
+        output = "";
+
+        output += `<option value="" disabled selected>Ship</option>`;
+        for (let i = 0; i < ships.length; i++) {
+            output += `<option value="${i}">${ships[i].name}</option>`;
+        }
+        selects.shipInp.innerHTML = output;
         output = "";
     }
 
@@ -108,5 +94,93 @@ function loadCalc() {
     if (selectValues.ship != null) {
         inputValues.qty = parseInt(selects.qtyInp.value);
         inputs.qtyInp.value = inputValues.qty;
+    }
+}
+
+
+// Event listeners
+selects.cmdtyInp.addEventListener("change", handleCommodityChange);
+selects.originInp.addEventListener("change", handleOriginChange);
+selects.destInp.addEventListener("change", handleDestinationChange);
+selects.shipInp.addEventListener("change", handleShipChange);
+inputs.prchsPrcInp.addEventListener("input", calc);
+inputs.sellPrcInp.addEventListener("input", calc);
+inputs.qtyInp.addEventListener("input", calc);
+inputs.expnss.addEventListener("input", calc);
+inputs.flgtTime.addEventListener("input", calc);
+
+
+// Event handler functions
+function handleCommodityChange() {
+    const commoditySelected = selects.cmdtyInp.value !== "";
+    selects.originInp.disabled = !commoditySelected;
+    selects.destInp.disabled = !commoditySelected;
+
+    if (commoditySelected) {
+        loadCalc();
+    } else {
+        selects.originInp.innerHTML = `<option value="" disabled selected>Origin</option>`;
+        selects.destInp.innerHTML = `<option value="" disabled selected>Destination</option>`;
+    }
+    calc();
+}
+
+function handleOriginChange() {
+    const originIndex = parseInt(selects.originInp.value);
+    if (!isNaN(originIndex)) {
+        selectValues.origin = selectValues.commodity.buyableAt[originIndex];
+        inputs.prchsPrcInp.value = selectValues.origin.price;
+        calc();
+    }
+}
+
+function handleDestinationChange() {
+    const destinationIndex = parseInt(selects.destInp.value);
+    if (!isNaN(destinationIndex)) {
+        selectValues.destination = selectValues.commodity.sellableAt[destinationIndex];
+        inputs.sellPrcInp.value = selectValues.destination.price;
+        calc();
+    }
+}
+
+function handleShipChange() {
+    const shipIndex = parseInt(selects.shipInp.value);
+    if (!isNaN(shipIndex)) {
+        selectValues.ship = ships[shipIndex];
+        inputs.qtyInp.value = selectValues.ship.cargo;
+        calc();
+    }
+}
+
+
+// Calculation function
+function calc() {
+    inputValues.prchsPrc = parseFloat(inputs.prchsPrcInp.value) || 0;
+    inputValues.sellPrc = parseFloat(inputs.sellPrcInp.value) || 0;
+    inputValues.qty = parseFloat(inputs.qtyInp.value) || 0;
+    inputValues.expenses = parseFloat(inputs.expnss.value) || 0;
+    inputValues.flightTime = parseFloat(inputs.flgtTime.value) || 0;
+
+    if (inputValues.prchsPrc > 0 && inputValues.sellPrc > 0 && inputValues.qty > 0) {
+        const investment = inputValues.prchsPrc * inputValues.qty;
+        const turnover = inputValues.sellPrc * inputValues.qty;
+        const grossProfit = turnover - investment;
+        const netProfit = grossProfit - inputValues.expenses;
+        const margin = (grossProfit / turnover) * 100 || 0;
+        const netProfitPerHour = inputValues.flightTime > 0 ? netProfit / (inputValues.flightTime/60) : 0;
+
+        outputs.invOutp.textContent = `Investment: ${investment.toFixed(2)} aUEC`;
+        outputs.trnovrOutp.textContent = `Turnover: ${turnover.toFixed(2)} aUEC`;
+        outputs.grsPrft.textContent = `Gross Profit: ${grossProfit.toFixed(2)} aUEC`;
+        outputs.ntPrft.textContent = `Net Profit: ${netProfit.toFixed(2)} aUEC`;
+        outputs.mrgn.textContent = `Margin: ${margin.toFixed(2)}%`;
+        outputs.ntPrftPH.textContent = `Net Profit/Hour: ${netProfitPerHour.toFixed(2)} aUEC`;
+    } else {
+        outputs.invOutp.textContent = "Investment: -";
+        outputs.trnovrOutp.textContent = "Turnover: -";
+        outputs.grsPrft.textContent = "Gross Profit: -";
+        outputs.ntPrft.textContent = "Net Profit: -";
+        outputs.mrgn.textContent = "Margin: -";
+        outputs.ntPrftPH.textContent = "Net Profit/Hour: -";
     }
 }

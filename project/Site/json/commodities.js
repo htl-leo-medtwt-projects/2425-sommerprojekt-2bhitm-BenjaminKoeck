@@ -7,7 +7,7 @@ let commodities = [
                 "name": "ArcCorp Mining Area 141",
                 "location": "Daymar, Crusader, Stanton",
                 "obj": locations.stanton.crusader.satellites.daymar.acma141,
-                "price": 2076.0
+                "price": 2076.0 // Price in aUEC, per SCU 
             }
         ],
         "sellableAt": [

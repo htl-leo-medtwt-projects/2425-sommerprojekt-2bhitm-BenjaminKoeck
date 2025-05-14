@@ -168,6 +168,9 @@ select option {
 }
 
 #outputs div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
@@ -176,6 +179,10 @@ select option {
     border: var(--border);
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--text-color);
 }
 
 
