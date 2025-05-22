@@ -25,28 +25,63 @@
     <div id="content">
         <div id="calculator">
             <div id="routeMenu">
-                <div id="routes"></div>
+                <div id="routes">
+
+                </div>
                 <div id="addRouteBtn"></div>
             </div>
             <div id="inputs">
                 <div id="cmdtyInputs">
-                    <select id="commodity">
-                        <option value="" disabled selected>Commodity</option>
-                    </select>
-                    <select id="origin" disabled>
-                        <option value="" disabled selected>Origin</option>
-                    </select>
-                    <input type="number" id="purchasePrice" placeholder="Purchase Price">
-                    <select id="destination" disabled>
-                        <option value="" disabled selected>Destination</option>
-                    </select>
-                    <input type="number" id="sellPrice" placeholder="Sell Price">
-                    <select id="ship">
-                        <option value="" disabled selected>Ship</option>
-                    </select>
-                    <input type="number" id="quantity" placeholder="Quantity">
-                    <input type="number" id="expenses" placeholder="Expenses">
-                    <input type="number" id="flightTime" placeholder="Flight Time">
+                    <div class="inOutCt">
+                        <p>Commodity</p>
+                        <select id="commodity" class="fullWidth">
+                            <option value="" disabled selected>Commodity</option>
+                        </select>
+                    </div>
+                    <div class="halfWidthInputCt">
+                        <div class="inOutCt">
+                            <p>Origin</p>
+                            <select id="origin" class="halfWidth" disabled>
+                                <option value="" disabled selected>Origin</option>
+                            </select>
+                        </div>
+                        <div class="inOutCt">
+                            <p>Purchase Price</p>
+                            <input type="number" id="purchasePrice" class="halfWidth" placeholder="Purchase Price">
+                        </div>
+                    </div>
+                    <div class="halfWidthInputCt">
+                        <div class="inOutCt">
+                            <p>Destination</p>
+                            <select id="destination" class="halfWidth" disabled>
+                                <option value="" disabled selected>Destination</option>
+                            </select>
+                        </div>
+                        <div class="inOutCt">
+                            <p>Sell Price</p>
+                            <input type="number" id="sellPrice" class="halfWidth" placeholder="Sell Price">
+                        </div>
+                    </div>
+                    <div class="halfWidthInputCt">
+                        <div class="inOutCt">
+                            <p>Ship</p>
+                            <select id="ship" class="halfWidth">
+                                <option value="" disabled selected>Ship</option>
+                            </select>
+                        </div>
+                        <div class="inOutCt">
+                            <p>Quantity</p>
+                            <input type="number" id="quantity" class="halfWidth" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="inOutCt">
+                        <p>Expenses</p>
+                        <input type="number" id="expenses" class="fullWidth" placeholder="Expenses">
+                    </div>
+                    <div class="inOutCt">
+                        <p>Flight Time</p>
+                        <input type="number" id="flightTime" class="fullWidth" placeholder="Flight Time">
+                    </div>
                 </div>
             </div>
             <div id="outputs">

@@ -1,3 +1,5 @@
+// Calculator
+
 // Selects
 let selects = {
     "cmdtyInp": document.getElementById("commodity"),
@@ -169,18 +171,48 @@ function calc() {
         const margin = (grossProfit / turnover) * 100 || 0;
         const netProfitPerHour = inputValues.flightTime > 0 ? netProfit / (inputValues.flightTime/60) : 0;
 
-        outputs.invOutp.textContent = `Investment: ${investment.toFixed(2)} aUEC`;
-        outputs.trnovrOutp.textContent = `Turnover: ${turnover.toFixed(2)} aUEC`;
-        outputs.grsPrft.textContent = `Gross Profit: ${grossProfit.toFixed(2)} aUEC`;
-        outputs.ntPrft.textContent = `Net Profit: ${netProfit.toFixed(2)} aUEC`;
-        outputs.mrgn.textContent = `Margin: ${margin.toFixed(2)}%`;
-        outputs.ntPrftPH.textContent = `Net Profit/Hour: ${netProfitPerHour.toFixed(2)} aUEC`;
+        outputs.invOutp.textContent = investment.toFixed(2);
+        outputs.trnovrOutp.textContent = turnover.toFixed(2);
+        outputs.grsPrft.textContent = grossProfit.toFixed(2);
+        outputs.ntPrft.textContent = netProfit.toFixed(2);
+        outputs.mrgn.textContent = margin.toFixed(2);
+        outputs.ntPrftPH.textContent = netProfitPerHour.toFixed(2);
     } else {
-        outputs.invOutp.textContent = "Investment: -";
-        outputs.trnovrOutp.textContent = "Turnover: -";
-        outputs.grsPrft.textContent = "Gross Profit: -";
-        outputs.ntPrft.textContent = "Net Profit: -";
-        outputs.mrgn.textContent = "Margin: -";
-        outputs.ntPrftPH.textContent = "Net Profit/Hour: -";
+        outputs.invOutp.textContent = "--";
+        outputs.trnovrOutp.textContent = "--";
+        outputs.grsPrft.textContent = "--";
+        outputs.ntPrft.textContent = "--";
+        outputs.mrgn.textContent = "--";
+        outputs.ntPrftPH.textContent = "--";
     }
 }
+
+
+
+
+/* Route menu
+let routesDiv = document.getElementById("routes");
+let addRouteBtn = document.getElementById("addRouteBtn");
+
+let routes = [
+    {
+        "name": "Route 1",
+        "id": 0,
+        "commodity": commodities[0],
+        "origin": commodities[0].buyableAt[0],
+        "destination": commodities[0].sellableAt[0],
+        "ship": ships[0],
+        "expenses": 0,
+        "flightTime": 0
+    }
+];
+
+function loadRoutes() {
+    let output = ``;
+    for (let i = 0; i < routes.length; i++) {
+        output += `<div class="routes" id="route-${i}">${routes[i].name}</div>`;
+    }
+    routesDiv.innerHTML = output;
+}
+loadRoutes();
+addRouteBtn.addEventListener("click", addRoute);*/

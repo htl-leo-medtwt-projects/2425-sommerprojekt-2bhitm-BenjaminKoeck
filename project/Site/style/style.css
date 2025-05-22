@@ -90,6 +90,7 @@ body {
     border: var(--border);
     border-radius: var(--border-radius);
     background-color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 #cmdtyInputs {
@@ -101,15 +102,53 @@ body {
     padding: 0;
 }
 
-#cmdtyInputs input {
+.inOutCt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.halfWidthInputCt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-bottom: var(--inputs-vertical-margin);
+    padding: 0;
+    width: var(--inputs-width);
+    height: max-content;
+}
+
+#cmdtyInputs p {
+    margin: 0.5vh;
+    font-size: 1.4em;
+}
+
+.fullWidth {
     margin: 0;
     margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
     width: var(--inputs-width);
     height: var(--inputs-height);
-    border: var(--border);
+    border: var(--primary-color) 3px solid;
+    border-bottom: var(--border-color) 3px solid;
     background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.halfWidth {
+    margin: 0;
+    margin-bottom: var(--inputs-vertical-margin);
+    padding: 0;
+    width: calc(var(--inputs-width) / 2 - 1vw);
+    height: var(--inputs-height);
+    border: var(--primary-color) 3px solid;
+    border-bottom: var(--border-color) 3px solid;
+    background-color: var(--secondary-color);
     color: white;
     text-align: center;
     font-size: 2em;
@@ -126,9 +165,9 @@ select {
     padding: 0;
     width: var(--inputs-width);
     height: var(--inputs-height);
-    border: var(--border);
+    border: var(--primary-color) 3px solid;
+    border-bottom: var(--border-color) 3px solid;
     background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
     color: white;
     text-align: center;
     font-size: 2em;
@@ -184,6 +223,51 @@ select option {
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--text-color);
 }
+
+
+    /*Route menu
+:root {
+    --route-width: 300px;
+}
+
+#routeMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: var(--inputs-other-vertical-margin) auto 0 auto;
+    width: 1400px;
+    height: max-content;
+}
+
+.routes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: var(--route-width);
+    height: var(--inputs-height);
+    border: var(--border);
+    background-color: var(--secondary-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--text-color);
+}
+
+.routes:hover {
+    background-color: var(--border-color);
+    cursor: pointer;
+}
+
+.routes:active {
+    background-color: var(--primary-color);
+
+}
+
+*/
 
 
 /* Homepage */
