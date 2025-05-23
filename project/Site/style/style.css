@@ -108,6 +108,22 @@ body {
     justify-content: space-around;
 }
 
+.output {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: var(--inputs-vertical-margin);
+    padding: 0;
+    height: var(--inputs-height);
+    width: var(--inputs-width);
+    border: var(--primary-color) 3px solid;
+    border-bottom: var(--border-color) 3px solid;
+    background-color: var(--secondary-color);
+    font-size: 1.4em;
+}
+
 .halfWidthInputCt {
     display: flex;
     flex-direction: row;
@@ -120,7 +136,7 @@ body {
     height: max-content;
 }
 
-#cmdtyInputs p {
+.inOutCt p {
     margin: 0.5vh;
     font-size: 1.4em;
 }
@@ -204,24 +220,68 @@ select option {
     border: var(--border);
     border-radius: var(--border-radius);
     background-color: var(--secondary-color);
-}
-
-#outputs div {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    margin-bottom: var(--inputs-vertical-margin);
-    padding: 0;
-    width: var(--inputs-width);
-    height: var(--inputs-height);
-    border: var(--border);
-    background-color: var(--secondary-color);
-    border-radius: var(--border-radius);
-    text-align: center;
-    font-size: 2em;
     font-family: 'Bai Jamjuree', sans-serif;
     color: var(--text-color);
+    text-align: center;
+}
+
+
+#howToBtn {
+    position: fixed;
+    bottom: 10vh;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5vw;
+    width: 5vw;
+    background-color: var(--secondary-color);
+    border: var(--border);
+    color: var(--text-color);
+    border-radius: 5vw;
+    font-size: 3em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    cursor: pointer;
+}
+
+#howToBtn:hover {
+    background-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+#howTo {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--text-color);
+    font-size: 2em;
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#closeHowToBtn {
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 5vw;
+    margin: auto;
+    padding: 0.4vw;
+}
+
+#closeHowToBtn:hover {
+    background-color: var(--border-color);
+    color: var(--primary-color);
 }
 
 

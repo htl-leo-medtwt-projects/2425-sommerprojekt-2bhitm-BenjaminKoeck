@@ -47,7 +47,7 @@
                         </div>
                         <div class="inOutCt">
                             <p>Purchase Price</p>
-                            <input type="number" id="purchasePrice" class="halfWidth" placeholder="Purchase Price">
+                            <input type="number" id="purchasePrice" class="halfWidth">
                         </div>
                     </div>
                     <div class="halfWidthInputCt">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="inOutCt">
                             <p>Sell Price</p>
-                            <input type="number" id="sellPrice" class="halfWidth" placeholder="Sell Price">
+                            <input type="number" id="sellPrice" class="halfWidth">
                         </div>
                     </div>
                     <div class="halfWidthInputCt">
@@ -71,26 +71,64 @@
                         </div>
                         <div class="inOutCt">
                             <p>Quantity</p>
-                            <input type="number" id="quantity" class="halfWidth" placeholder="Quantity">
+                            <input type="number" id="quantity" class="halfWidth">
                         </div>
                     </div>
                     <div class="inOutCt">
                         <p>Expenses</p>
-                        <input type="number" id="expenses" class="fullWidth" placeholder="Expenses">
+                        <input type="number" id="expenses" class="fullWidth">
                     </div>
                     <div class="inOutCt">
-                        <p>Flight Time</p>
-                        <input type="number" id="flightTime" class="fullWidth" placeholder="Flight Time">
+                        <p>Flight Time in minutes</p>
+                        <input type="number" id="flightTime" class="fullWidth">
                     </div>
                 </div>
             </div>
             <div id="outputs">
-                <div id="investment">Investment: -</div>
-                <div id="turnover">Turnover: -</div>
-                <div id="grossProfit">Gross Profit: -</div>
-                <div id="netProfit">Net Profit: -</div>
-                <div id="margin">Margin: -</div>
-                <div id="netProfitPerHour">Net Profit/Hour: -</div>
+                <div class="inOutCt">
+                    <p>Investment</p>
+                    <div id="investment" class="output">--</div>
+                </div>
+                <div class="inOutCt">
+                    <p>Turnover</p>
+                    <div id="turnover" class="output">--</div>
+                </div>
+                <div class="halfWidthInputCt">
+                    <div class="inOutCt">
+                        <p>Gross Profit</p>
+                        <div id="grossProfit" class="halfWidth output">--</div>
+                    </div>
+                    <div class="inOutCt">
+                        <p>Net Profit</p>
+                        <div id="netProfit" class="halfWidth output">--</div>
+                    </div>
+                </div>
+                <div class="inOutCt">
+                    <p>Margin</p>
+                    <div id="margin" class="output">--</div>
+                </div>
+                <div class="inOutCt">
+                    <p>Net Profit/Hour</p>
+                    <div id="netProfitPerHour" class="output">--</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="howToBtn" onclick="showHowTo()">
+            ?
+        </div>
+
+        <div id="howTo">
+            <div id="howToContent">
+                <h2>How to use the calculator</h2>
+                <p>1. Select a commodity from the dropdown menu.</p>
+                <p>2. Choose the origin and destination locations. Purchase and sell price will be automatically filled.</p>
+                <p>OR Enter the purchase and sell prices.</p>
+                <p>3. Select your ship. The quantity field will be automatically filled with the ship's total cargo capacity.</p>
+                <p>OR Enter the quantity yourself.</p>
+                <p>4. Enter any additional expenses and flight time. (optional)</p>
+                <p>5. The calculator will automatically update the outputs.</p>
+                <div id="closeHowToBtn" onclick="hideHowTo()">Close</div>
             </div>
         </div>
     </div>
