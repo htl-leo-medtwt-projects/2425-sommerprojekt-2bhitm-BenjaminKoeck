@@ -216,3 +216,13 @@ function loadRoutes() {
 }
 loadRoutes();
 addRouteBtn.addEventListener("click", addRoute);*/
+
+
+
+function showHowTo() {
+    document.getElementById("howTo").style.display = "flex";
+}
+
+function hideHowTo() {
+    document.getElementById("howTo").style.display = "none";
+}
