@@ -171,12 +171,12 @@ function calc() {
         const margin = (grossProfit / turnover) * 100 || 0;
         const netProfitPerHour = inputValues.flightTime > 0 ? netProfit / (inputValues.flightTime/60) : 0;
 
-        outputs.invOutp.textContent = investment.toFixed(2);
-        outputs.trnovrOutp.textContent = turnover.toFixed(2);
-        outputs.grsPrft.textContent = grossProfit.toFixed(2);
-        outputs.ntPrft.textContent = netProfit.toFixed(2);
-        outputs.mrgn.textContent = margin.toFixed(2);
-        outputs.ntPrftPH.textContent = netProfitPerHour.toFixed(2);
+        outputs.invOutp.textContent = investment.toFixed(2) + " aUEC";
+        outputs.trnovrOutp.textContent = turnover.toFixed(2) + " aUEC";
+        outputs.grsPrft.textContent = grossProfit.toFixed(2) + " aUEC";
+        outputs.ntPrft.textContent = netProfit.toFixed(2) + " aUEC";
+        outputs.mrgn.textContent = margin.toFixed(2) + " %";
+        outputs.ntPrftPH.textContent = netProfitPerHour.toFixed(2) + " aUEC";
     } else {
         outputs.invOutp.textContent = "--";
         outputs.trnovrOutp.textContent = "--";

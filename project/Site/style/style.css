@@ -15,8 +15,8 @@
 
     --background-image: url("../img/bgDark.png");
 
-    --inputs-width: 1230px;
-    --inputs-height: 64px;
+    --inputs-width: 64vw;
+    --inputs-height: 6vh;
     --inputs-vertical-margin: 16px;
     --inputs-other-vertical-margin: 30px;
 
@@ -76,7 +76,7 @@ body {
     background-color: var(--primary-color);
     border: var(--border);
     border-radius: var(--border-radius);
-    width: 1400px;
+    width: 73vw;
 }
 
 #inputs {
@@ -84,7 +84,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 1306px;
+    width: 68vw;
     margin: var(--inputs-other-vertical-margin) auto var(--inputs-other-vertical-margin) auto;
     padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
     border: var(--border);
@@ -106,6 +106,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-bottom: var(--inputs-vertical-margin);
+    height: fit-content;
 }
 
 .output {
@@ -136,9 +138,25 @@ body {
     height: max-content;
 }
 
-.inOutCt p {
+.inOutCt h4 {
     margin: 0.5vh;
     font-size: 1.4em;
+    font-weight: normal;
+}
+
+.inOutCt div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.units {
+    margin: 0;
+    margin-left: 0.6vw;
+    font-size: 1em;
+    color: var(--text-color);
+    opacity: 0.7;
 }
 
 .fullWidth {
@@ -157,8 +175,12 @@ body {
 }
 
 .halfWidth {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    box-sizing: content-box;
     margin: 0;
-    margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
     width: calc(var(--inputs-width) / 2 - 1vw);
     height: var(--inputs-height);
@@ -172,15 +194,16 @@ body {
 }
 
 select {
-    appearance: none;
-    -webkit-appearance: none;
+    display: block;
     -moz-appearance: none;
-    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: content-box;
     margin: 0;
     margin-bottom: var(--inputs-vertical-margin);
     padding: 0;
     width: var(--inputs-width);
-    height: var(--inputs-height);
+    height: auto;
     border: var(--primary-color) 3px solid;
     border-bottom: var(--border-color) 3px solid;
     background-color: var(--secondary-color);
@@ -214,7 +237,7 @@ select option {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 1306px;
+    width: 68vw;;
     margin: 0 auto var(--inputs-other-vertical-margin) auto;
     padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
     border: var(--border);
@@ -255,7 +278,6 @@ select option {
     position: fixed;
     bottom: 0;
     right: 0;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
