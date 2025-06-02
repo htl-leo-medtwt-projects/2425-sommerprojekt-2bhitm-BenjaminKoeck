@@ -178,12 +178,12 @@ function calc() {
         outputs.mrgn.textContent = margin.toFixed(2) + " %";
         outputs.ntPrftPH.textContent = netProfitPerHour.toFixed(2) + " aUEC";
     } else {
-        outputs.invOutp.textContent = "--";
-        outputs.trnovrOutp.textContent = "--";
-        outputs.grsPrft.textContent = "--";
-        outputs.ntPrft.textContent = "--";
-        outputs.mrgn.textContent = "--";
-        outputs.ntPrftPH.textContent = "--";
+        outputs.invOutp.textContent = "-- aUEC";
+        outputs.trnovrOutp.textContent = "-- aUEC";
+        outputs.grsPrft.textContent = "-- aUEC";
+        outputs.ntPrft.textContent = "-- aUEC";
+        outputs.mrgn.textContent = "-- %";
+        outputs.ntPrftPH.textContent = "-- aUEC";
     }
 }
 
@@ -225,4 +225,10 @@ function showHowTo() {
 
 function hideHowTo() {
     document.getElementById("howTo").style.display = "none";
+}
+
+
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
 }

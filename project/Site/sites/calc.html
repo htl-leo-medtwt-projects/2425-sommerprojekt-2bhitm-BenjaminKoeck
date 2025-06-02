@@ -17,7 +17,7 @@
 
 <body>
     <div id="header">
-        <div id="menuBtn"></div>
+        <div id="menuBtn" onclick="toggleMenu()"></div>
         <div id="logo">
             <h1 id="calcH1">StarHauler</h1>
         </div>
@@ -33,7 +33,7 @@
             <div id="inputs">
                 <div id="cmdtyInputs">
                     <div class="inOutCt">
-                        <p>Commodity</p>
+                        <h4>Commodity</h4>
                         <select id="commodity" class="fullWidth">
                             <option value="" disabled selected>Commodity</option>
                         </select>
@@ -46,7 +46,10 @@
                             </select>
                         </div>
                         <div class="inOutCt">
-                            <div><h4>Purchase Price</h4><p class="units">aUEC</p></div>
+                            <div>
+                                <h4>Purchase Price</h4>
+                                <p class="units">aUEC/SCU</p>
+                            </div>
                             <input type="number" id="purchasePrice" class="halfWidth">
                         </div>
                     </div>
@@ -58,7 +61,10 @@
                             </select>
                         </div>
                         <div class="inOutCt">
-                            <div><h4>Sell Price</h4><p class="units">aUEC</p></div>
+                            <div>
+                                <h4>Sell Price</h4>
+                                <p class="units">aUEC/SCU</p>
+                            </div>
                             <input type="number" id="sellPrice" class="halfWidth">
                         </div>
                     </div>
@@ -70,46 +76,67 @@
                             </select>
                         </div>
                         <div class="inOutCt">
-                            <div><h4>Quantity</h4><p class="units">SCU</p></div>
+                            <div>
+                                <h4>Quantity</h4>
+                                <p class="units">SCU</p>
+                            </div>
                             <input type="number" id="quantity" class="halfWidth">
                         </div>
                     </div>
                     <div class="inOutCt">
-                        <div><h4>Expenses</h4><p class="units">aUEC</p></div>
+                        <div>
+                            <h4>Expenses</h4>
+                            <p class="units">aUEC</p>
+                        </div>
                         <input type="number" id="expenses" class="fullWidth">
                     </div>
                     <div class="inOutCt">
-                        <div><h4>Flight Time</h4><p class="units">min</p></div>
+                        <div>
+                            <h4>Flight Time</h4>
+                            <p class="units">min</p>
+                        </div>
                         <input type="number" id="flightTime" class="fullWidth">
                     </div>
                 </div>
             </div>
             <div id="outputs">
                 <div class="inOutCt">
-                    <div><h4>Investment</h4><p class="units">aUEC</p></div>
-                    <div id="investment" class="output fullWidth">--</div>
+                    <div>
+                        <h4>Investment</h4>
+                    </div>
+                    <div id="investment" class="output fullWidth">-- aUEC</div>
                 </div>
                 <div class="inOutCt">
-                    <div><h4>Turnover</h4><p class="units">aUEC</p></div>
-                    <div id="turnover" class="output fullWidth">--</div>
+                    <div>
+                        <h4>Turnover</h4>
+                    </div>
+                    <div id="turnover" class="output fullWidth">-- aUEC</div>
                 </div>
                 <div class="halfWidthInputCt">
                     <div class="inOutCt">
-                        <div><h4>Gross Profit</h4><p class="units">aUEC</p></div>
-                        <div id="grossProfit" class="halfWidth output">--</div>
+                        <div>
+                            <h4>Gross Profit</h4>
+                        </div>
+                        <div id="grossProfit" class="halfWidth output">-- aUEC</div>
                     </div>
                     <div class="inOutCt">
-                        <div><h4>Net Profit</h4><p class="units">aUEC</p></div>
-                        <div id="netProfit" class="halfWidth output">--</div>
+                        <div>
+                            <h4>Net Profit</h4>
+                        </div>
+                        <div id="netProfit" class="halfWidth output">-- aUEC</div>
                     </div>
                 </div>
                 <div class="inOutCt">
-                    <div><h4>Margin</h4><p class="units">%</p></div>
-                    <div id="margin" class="output fullWidth">--</div>
+                    <div>
+                        <h4>Margin</h4>
+                    </div>
+                    <div id="margin" class="output fullWidth">-- %</div>
                 </div>
                 <div class="inOutCt">
-                    <div><h4>Net Profit/Hour</h4><p class="units">aUEC</p></div>
-                    <div id="netProfitPerHour" class="output fullWidth">--</div>
+                    <div>
+                        <h4>Net Profit/Hour</h4>
+                    </div>
+                    <div id="netProfitPerHour" class="output fullWidth">-- aUEC</div>
                 </div>
             </div>
         </div>
@@ -122,15 +149,22 @@
             <div id="howToContent">
                 <h2>How to use the calculator</h2>
                 <p>1. Select a commodity from the dropdown menu.</p>
-                <p>2. Choose the origin and destination locations. Purchase and sell price will be automatically filled.</p>
+                <p>2. Choose the origin and destination locations. Purchase and sell price will be automatically filled.
+                </p>
                 <p>OR Enter the purchase and sell prices.</p>
-                <p>3. Select your ship. The quantity field will be automatically filled with the ship's total cargo capacity.</p>
+                <p>3. Select your ship. The quantity field will be automatically filled with the ship's total cargo
+                    capacity.</p>
                 <p>OR Enter the quantity yourself.</p>
-                <p>4. Enter any additional expenses and flight time. (optional)</p>
+                <p>4. Enter any additional expenses (e.g. refueling cost) and flight time. (optional)</p>
                 <p>5. The calculator will automatically update the outputs.</p>
                 <div id="closeHowToBtn" onclick="hideHowTo()">Close</div>
             </div>
         </div>
+    </div>
+    <div id="menu">
+        <a href="../index.html">Home</a>
+        <a href="calc.html">Calculator</a>
+        <a href="routes.html">Routes</a>
     </div>
 </body>
 

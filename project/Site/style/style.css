@@ -9,18 +9,18 @@
     --text-color: white;
     --border-color: #54ADF7;
 
-    --border: var(--border-color) 3px solid;
-    --border-radius: 17px;
+    --border: var(--border-color) 0.2778vh solid;
+    --border-radius: 1.574vh;
 
 
     --background-image: url("../img/bgDark.png");
 
     --inputs-width: 64vw;
     --inputs-height: 6vh;
-    --inputs-vertical-margin: 16px;
-    --inputs-other-vertical-margin: 30px;
+    --inputs-vertical-margin: 1.48vh;
+    --inputs-other-vertical-margin: 2.778vh;
 
-    
+    --header-height: 9.26vh;
 }
 
 /* Calculator & General */
@@ -38,22 +38,26 @@ body {
 }
 
 #header {
+    display: flex;
+    flex-direction: row;
     background-color: var(--primary-color);
     color: var(--text-color);
+    align-items: center;
     text-align: center;
-    height: 100px;
-    width: 100vw;
+    height: var(--header-height);
+    width: calc(100vw - 4.167vw - 1.875vw);
     position: sticky;
-    top: -100px;
+    top: calc(-1 * var(--header-height));
     margin: 0;
     border-bottom: var(--border);
+    padding-right: calc(1.875vw + 4.167vw);
 }
 
 #logo {
     font-size: 2em;
-    margin: auto 0 auto 0;
+    margin: auto auto auto auto;
     padding: 0;
-    line-height: 100px;
+    line-height: var(--header-height);
 }
 
 #logo h1 {
@@ -63,9 +67,46 @@ body {
 }
 
 #menuBtn {
-    display: none;
-    margin: auto 0 auto 0;
+    background-image: url("../img/menuBtnDark.png");
+    background-size: 4.167vw 4.63vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 4.167vw;
+    height: 4.63vh;
+    margin: auto 0 auto 1.875vw;
+    cursor: pointer;
 }
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--primary-color);
+    border-right: var(--border);
+    z-index: 1000;
+}
+
+#menu a {
+    display: block;
+    color: var(--text-color);
+    background-color: var(--secondary-color)
+    ;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 20px;
+    border-bottom: var(--border);
+}
+
+#menu a:hover {
+    background-color: var(--border-color);
+    color: var(--primary-color);
+}
+
+
+
 
 #calculator {
     display: flex;
@@ -226,7 +267,7 @@ select option {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - var(--header-height));
     width: 100vw;
     margin: 0;
     padding: var(--inputs-other-vertical-margin) 0 calc(var(--inputs-other-vertical-margin) - var(--inputs-vertical-margin)) 0;
@@ -417,4 +458,18 @@ h2 {
     100% {
         opacity: 1;
     }
+}
+
+
+
+/* Route List */
+#routeList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: ;
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: var(--text-color);
 }
