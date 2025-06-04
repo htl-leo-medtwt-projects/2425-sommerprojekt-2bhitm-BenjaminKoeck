@@ -93,7 +93,7 @@ let commodities = [
             }, 
             {
                 "name": "Reclamation and Disposal Orinth",
-                "buys": "Hurston, Stanton",
+                "location": "Hurston, Stanton",
                 "obj": locations.stanton.hurston.surface.rdo,
                 "price": 8450.0
             },
@@ -109,7 +109,6 @@ let commodities = [
                 "obj": locations.stanton.hurston.surface.lorville.tce,
                 "price": 8500.0
             }
-
         ]
     }
 ]

@@ -12,7 +12,7 @@
     <script src="../json/commodities.js"></script>
     <script src="../json/ships.js"></script>
 
-    <script src="../script/routesScript.js" defer></script>
+    <script src="../script/routeScript.js" defer></script>
 </head>
 
 <body>
@@ -22,16 +22,23 @@
             <h1 id="calcH1">StarHauler</h1>
         </div>
     </div>
-    <div id="content">
+    <div id="routeContent" >
         <div id="routeListCt">
             <div id="sortOptions">
+                <p>Commodity</p>
+                <p>Origin</p>
+                <p>Destination</p>
+                <p style="text-align: right;">Purchase Price</p>
+                <p style="text-align: right;">Sell Price</p>
+                <p style="text-align: right;">Profit</p>
+                <p style="text-align: right;">Margin</p>
+                <p style="text-align: right;">Profit per Hour</p>
             </div>
             <div id="routeList">
-                
             </div>
         </div>
     </div>
-    <div id="menu">
+    <div id="menu" style="transform: translateX(-100%);">
         <a href="../index.html">Home</a>
         <a href="calc.html">Calculator</a>
         <a href="routes.html">Routes</a>

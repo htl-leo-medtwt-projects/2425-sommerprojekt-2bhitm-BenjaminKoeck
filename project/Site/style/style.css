@@ -9,7 +9,8 @@
     --text-color: white;
     --border-color: #54ADF7;
 
-    --border: var(--border-color) 0.2778vh solid;
+    --border-width: 0.2778vh;
+    --border: var(--border-color) var(--border-width) solid;
     --border-radius: 1.574vh;
 
 
@@ -19,6 +20,8 @@
     --inputs-height: 6vh;
     --inputs-vertical-margin: 1.48vh;
     --inputs-other-vertical-margin: 2.778vh;
+
+    --ct-width: ;
 
     --header-height: 9.26vh;
 }
@@ -78,12 +81,12 @@ body {
 }
 
 #menu {
-    display: none;
+    display: block;
     position: fixed;
-    top: 0;
+    top: var(--header-height);
     left: 0;
     width: 40vw;
-    height: 100vh;
+    height: calc(100vh - var(--header-height));
     background-color: var(--primary-color);
     border-right: var(--border);
     z-index: 1000;
@@ -105,6 +108,41 @@ body {
     color: var(--primary-color);
 }
 
+@keyframes menuSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes menuSlideReverse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes menuBtnAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes menuBtnAnimationReverse {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 
 
@@ -463,13 +501,97 @@ h2 {
 
 
 /* Route List */
+#routeListCt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 86vw;
+    height: calc(100vh - var(--header-height) - var(--border-width) - 2*var(--inputs-other-vertical-margin));
+    background-color: var(--primary-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
 #routeList {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    width: ;
-    height: 100vh;
+    width: 86vw;
+    height: 90%;
     background-color: var(--primary-color);
     color: var(--text-color);
+    overflow-y: scroll;
+}
+#routeList::-webkit-scrollbar {
+    width: 6px;
+}
+#routeList::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+#routeList::-webkit-scrollbar-track {
+    background: var(--primary-color);
+}
+
+#routeContent {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: calc(100vh - var(--header-height) - var(--border-width) - 2*var(--inputs-other-vertical-margin));
+    width: 100vw;
+    margin: 0;
+    padding: var(--inputs-other-vertical-margin) 0 var(--inputs-other-vertical-margin) 0;
+    overflow: hidden;
+}
+
+.routeItem {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 2fr 4fr 4fr repeat(5, 1fr);
+    width: calc(100% - 2vw);
+    border-top: var(--border);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0 1vw 0 1vw;
+    color: var(--text-color);
+    gap: 2vw;
+    font-size: 1.1em;
+    min-height: 10vh;
+}
+
+.routeItem:hover {
+    background-color: var(--border-color);
+    cursor: pointer;
+}
+
+.routeItem p {
+    height: fit-content;
+}
+
+
+#sortOptions {
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr repeat(5, 1fr);
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 2vw - 6px);
+    height: 10vh;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding: 0 calc(1vw + 6px) 0 1vw;
+    border-bottom: var(--border);
+}
+
+#sortOptions p {
+    margin: 0;
+    padding: 0;
 }
