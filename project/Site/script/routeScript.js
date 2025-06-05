@@ -1,4 +1,5 @@
 let routeList = document.getElementById("routeList");
+let sortOptions = document.getElementsByClassName("sortOption");
 
 let routes = [];
 
@@ -26,48 +27,103 @@ function calcRoutes() {
     });
 }
 
-function sortRoutesByOrigin() {
+function sortRoutesByCommodity(element) {
+    routes.sort((a, b) => {
+        if (a.commodity.name < b.commodity.name) return -1;
+        if (a.commodity.name > b.commodity.name) return 1;
+        return 0;
+    });
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
+    displayRoutes();
+}
+
+function sortRoutesByOrigin(element) {
     routes.sort((a, b) => {
         if (a.origin.name < b.origin.name) return -1;
         if (a.origin.name > b.origin.name) return 1;
         return 0;
     });
 
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesByDestination() {
+function sortRoutesByDestination(element) {
     routes.sort((a, b) => {
         if (a.destination.name < b.destination.name) return -1;
         if (a.destination.name > b.destination.name) return 1;
         return 0;
     });
 
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesByPurchasePrice() {
-    routes.sort((a, b) => a.purchasePrice - b.purchasePrice);
+function sortRoutesByPurchasePrice(element) {
+    routes.sort((a, b) => b.purchasePrice - a.purchasePrice);
+    
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesBySellPrice() {
-    routes.sort((a, b) => a.sellPrice - b.sellPrice);
+function sortRoutesBySellPrice(element) {
+    routes.sort((a, b) => b.sellPrice - a.sellPrice);
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesByProfit() {
-    routes.sort((a, b) => a.profit - b.profit);
+function sortRoutesByProfit(element) {
+    routes.sort((a, b) => b.profit - a.profit);
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesByMargin() {
-    routes.sort((a, b) => a.margin - b.margin);
+function sortRoutesByMargin(element) {
+    routes.sort((a, b) => b.margin - a.margin);
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
-function sortRoutesByProfitPerHour() {
-    routes.sort((a, b) => a.profitPerHourInSixteenMins - b.profitPerHourInSixteenMins);
+function sortRoutesByProfitPerHour(element) {
+    routes.sort((a, b) => b.profitPerHourInSixteenMins - a.profitPerHourInSixteenMins);
+
+    for (let i = 0; i < sortOptions.length; i++) {
+        sortOptions[i].classList.remove("active");
+    }
+    element.classList.add("active");
+
     displayRoutes();
 }
 
