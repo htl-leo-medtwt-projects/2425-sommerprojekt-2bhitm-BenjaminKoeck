@@ -230,5 +230,9 @@ function hideHowTo() {
 
 function toggleMenu() {
     const menu = document.getElementById("menu");
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
+    const menuBtn = document.getElementById("menuBtn");
+    menu.style.animation = menu.style.transform == "translateX(0px)" ? "menuSlideReverse 0.5s linear 1" : "menuSlide 0.5s linear 1";
+    menu.style.transform = menu.style.transform == "translateX(0px)" ? "translateX(-100%)" : "translateX(0px)";
+    menuBtn.style.animation = menuBtn.style.transform == "rotate(0deg)" ? "menuBtnAnimation 0.5s linear 1" : "menuBtnAnimationReverse 0.5s linear 1"
+    menuBtn.style.transform = menuBtn.style.transform == "rotate(0deg)" ? "rotate(180deg)" : "rotate(0deg)";
 }
